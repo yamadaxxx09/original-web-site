@@ -6,13 +6,12 @@
 header {
     display: flex;
     height: 100px;
-    background-color: #FFCC33;
-    padding: 35px 50px;
-
+    background-color: #CCCC33;
+    padding: 10px 50px 0px 850px;
 }
 
 .menu {
-
+    margin: 0;
 }
 
 #menu_bar {
@@ -21,28 +20,86 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 
-.welcome > img {
+.welcome {
+    /* background: rgba(76, 175, 80, 0.3); */
+}
+
+.title_img {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+
+
 }
+
 
 section {
     width: 100%;
-    height: 700px;
     background-color: #CCCC33;
+}
+
+.study {
+    /* padding: 100px; */
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.class {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px ;
+}
+
+.class_img {
+    max-width: 400px;
+}
+
+.class > p {
+    text-align: center;
+}
+
+.study > div {
+    /* border: solid 1px; */
+    /* padding: 100px; */
+}
+
+.slides {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide_img {
+    padding: 30px ;
+    max-width: 250px;
+}
+
+.enjoy {
+    height: 400px;
+}
+
+.happy {
+    padding: 50px;
 }
 
 
 footer {
     background-color: #FFCC33;
     color: whitesmoke;
-    width: 100%;
-    height: 50px;
+
+    text-align: center;
+    padding: 10px 0;
+
 }
 
 .copyright {
-    align-items: center;
-    justify-content: center;
 }
