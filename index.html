@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
-
     <header id="header" class="header">
-        <i class='bx bx-menu' ></i>
-        <nav id="headerMenu"></nav>
-            <div class="menu">
-                <ul id="menu_bar">
-                    <li><a href="#cafe">カフェ</a></li>
-                    <li><a href="#resterant">レストラン</a></li>
-                    <li><a href="#place">場所</a></li>
-                </ul>
-            </div>  
+        <div class="navtext-container">
+            <div class="navtext">私のセブでの日常</div>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/index.html">ホーム</a></li>
+            <li><a href="http://127.0.0.1:5500/cafe.html">カフェ</a></li>
+            <li><a href="http://127.0.0.1:5500/restaurant.html"">レストラン</a></li>
+            <li><a href="http://127.0.0.1:5500/recommend.html">場所</a></li>
+        </ul>
     </header>
-
     <main>
         <section class="welcome">
-            
-            <h1 class="title">私のセブでの日常</h1>
-            <img src="./assets/Img/title.png" alt="title" class="title_img">
+            <!-- <div class="title_frame">
+                <img src="./assets/Img/title.png" alt="title" class="title_img1">
+                <img src="./assets/Img/Title1.jpg" alt="セブの写真1" class="title_img2">
+                <img src="./assets/Img/Title2.jpg" alt="セブの写真2" class="title_img3">
+                <img src="./assets/Img/Title3.jpg" alt="セブの写真3" class="title_img4">
+            </div> -->
         </section>
         <section id="weekdays" class="weekdays">
             <h2>Cebuでの月曜から金曜、普段は何をしているのか</h2>
@@ -51,22 +57,45 @@
         </section>
 
         <section id="recommend" class="recommend">
-            <h2>Cebuのおすすめ場所</h2>
-            <div class="slides">
-                <img src="./assets/Img/slide1.JPG" alt="スライド1" class="slide_img">
-                <img src="./assets/Img/slide2.jpg" alt="スライド2" class="slide_img">
-                <img src="./assets/Img/slide3.jpg" alt="スライド3" class="slide_img">
-                <img src="./assets/Img/slide4.jpg" alt="スライド4" class="slide_img">
-                <img src="./assets/Img/slide5.jpg" alt="スライド5" class="slide_img">
-                <img src="./assets/Img/slide6.jpg" alt="スライド6" class="slide_img">
-                <img src="./assets/Img/slide7.jpg" alt="スライド7" class="slide_img">
+            <div class="range">
+                <h2>おすすめカフェやレストラン</h2>
+                <div class="slides">
+                    <img src="./assets/Img/slide1.JPG" alt="スライド1" class="slide_img">
+                    <img src="./assets/Img/slide2.jpg" alt="スライド2" class="slide_img">
+                    <img src="./assets/Img/slide3.jpg" alt="スライド3" class="slide_img">
+                    <img src="./assets/Img/slide4.jpg" alt="スライド4" class="slide_img">
+                    <img src="./assets/Img/slide5.jpg" alt="スライド5" class="slide_img">
+                    <img src="./assets/Img/slide6.jpg" alt="スライド6" class="slide_img">
+                    <img src="./assets/Img/slide7.jpg" alt="スライド7" class="slide_img">
+                </div>
             </div>
         </section>
 
         <section id="enojoy" class="enjoy">
-            <h2>Cebuたのしんでネ的な</h2>
-            <p class="happy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste illo non delectus nostrum officia, ratione voluptatum dolorum, eveniet nisi illum quae voluptas maxime repellendus velit voluptatem ad? Asperiores, corporis.</p>
+            <h2>ほかに</h2>
+            
+           
+            <div class="place">
+                <div class="place_img">
+                    <img src="./assets/Img/Title3.jpg" alt="" class="default-image">
+                </div>
+                <div class="place_img">
+                    <img src="./assets/Img/market.jpg" alt="" class="hover-image img_hover">
+                </div>
+            </div>
+            <!-- <a class="happy" id="happy1"href="#">さめ</a>
+            <a class="happy" id="happy2"href="#">マーケット</a> -->
+            <p class="happy" id="happy1">さめ</p>
+            <p class="happy" id="happy2">マーケット</p>
+            <!-- <div class="text">
+                <ul>
+                    <li class="text_message">さめ</li>
+                    <li class="text_message">マーケット</li>
+                </ul>
+            </div> -->
         </section>
+
+
         
     </main>
     <footer id="footer" class="footer">
@@ -74,7 +103,6 @@
             <small>2024 &copy; セブおすすめBYやました</small>
         </div>
     </footer>
-        
     <script src="/assets/JS/script.js"></script>
 </body>
 </html>
