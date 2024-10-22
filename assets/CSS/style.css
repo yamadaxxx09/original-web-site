@@ -473,6 +473,7 @@ footer {
 .block {
     display: flex;
     justify-content: center;
+    /* padding: 20px; */
 }
 
 .frame {
@@ -489,6 +490,17 @@ footer {
     box-shadow: 0 3px 10px 0 #6482AD;
     opacity: 1.5;
     cursor: pointer;
+}
+
+/* あとで確認 */
+@media screen and (max-width: 480px) {
+    .frame:hover {
+        transform: translateY(-20px);
+        border-radius: 10%;
+        box-shadow: 0 3px 10px 0 #6482AD;
+        opacity: 1.5;
+        cursor: pointer;
+    }
 }
 
 .cafe {
