@@ -375,16 +375,6 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width:480px){
-    .slide_img:active {
-        transform: translateY(-20px);
-        border-radius: 10%;
-        box-shadow: 0 3px 10px 0 #6482AD;
-        opacity: 1.5;
-        cursor: pointer;
-    }
-}
-
 .enjoy {
     margin: 40px;
     padding: 0.2em 0.3em;
@@ -484,7 +474,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 
 .frame {
     max-width: 95%;
