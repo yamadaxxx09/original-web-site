@@ -21,7 +21,7 @@ p {
     color: #6482AD;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     h2 {
         font-size: 20px;
     }
@@ -328,9 +328,10 @@ section {
     height: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .class-image-size {
         width: 200px;
+
     }
 }
 
@@ -361,7 +362,6 @@ body {
     position: relative;
     display: flex;
     animation: loop-slide 10s infinite linear 1s both;
-
 }
 
 @keyframes loop-slide {
@@ -376,6 +376,43 @@ body {
         transform: translateX(-3%);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .slide_img {
+        margin: 30px 0px ;
+        width:100px;
+        transition: all 0,2s;
+        opacity: 0.6;
+        border-radius: 5%;
+    }
+    
+    .slide_img:hover {
+        transform: translateY(-20px);
+        border-radius: 10%;
+        box-shadow: 0 3px 10px 0 #6482AD;
+        opacity: 1.5;
+        cursor: pointer;
+    }
+    .slides {
+        position: relative;
+        display: flex;
+        animation: loop-slide 20s infinite linear 1s both;
+    }
+
+    @keyframes loop-slide {
+        0% {
+            transform: translateX(-2%);
+        }
+        50% {
+            transform: translateX(-130%);
+        }
+    
+        100% {
+            transform: translateX(-2%);
+        }
+    }
+}
+
 
 .slide_img {
     margin: 30px 0px ;
@@ -422,10 +459,11 @@ body {
     font-size: 19px;
 }
 
-@media screen and (max-width: 480px) {
-    
+@media screen and (max-width: 768px) {
+
     .question-answer {
         font-size: 12px;
+        margin: 50px 20px 50px 20px;
     }
     .hukidashi{
         width: 140px;
@@ -521,13 +559,18 @@ footer {
 }
 
 /* あとで確認 */
-@media screen and (max-width: 480px) {
-    .frame:hover {
-        transform: translateY(-20px);
-        border-radius: 10%;
-        box-shadow: 0 3px 10px 0 #6482AD;
-        opacity: 1.5;
-        cursor: pointer;
+@media screen and (max-width: 768px) {
+    .option {
+        height: 1050px;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        padding: 20px 20px 20px 20px ; 
     }
 }
 
@@ -541,6 +584,17 @@ footer {
     border-radius: 2px;
     overflow: hidden;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cafe {
+        font-size: 12px;
+    }
+    .h3-size {
+        font-size: 17px;
+    }
+
 }
 
 .cafe1 {
