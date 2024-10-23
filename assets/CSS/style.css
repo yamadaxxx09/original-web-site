@@ -490,7 +490,7 @@ body {
     height: 100%;
 }
 
-.slide-image {
+/* .slide-image {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -515,7 +515,7 @@ body {
           visibility 0.45s cubic-bezier(0.65, 0, 0.35, 1);
       }
     }
-}
+} */
 
 footer {
     background-color: #FBF9F1;
