@@ -536,10 +536,11 @@ footer {
     height: auto;
 }
 
-.block {
+/* .block {
     display: flex;
     justify-content: center;
-    /* padding: 20px; */
+    position: relative;
+
 }
 
 .frame {
@@ -556,10 +557,33 @@ footer {
     box-shadow: 0 3px 10px 0 #6482AD;
     opacity: 1.5;
     cursor: pointer;
+} */
+.block {
+    position: relative; /* 子要素が相対的に配置されるための基準を設定 */
+    width: 240px; /* コンテナの幅を調整 */
+    height: 250px; /* コンテナの高さ */
 }
 
+.photo-container {
+    position: absolute; /* 各写真を絶対位置で配置 */
+    width: 200px; /* 各写真の幅 */
+    height: 250px; /* 各写真の高さ */
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+/* 各カードを少しだけずらす */
+.photo-container:nth-child(1) { left: 0; }
+.photo-container:nth-child(2) { left: 100px; } /* 10pxだけ重ねる */
+.photo-container:nth-child(3) { left: 200px; } /* 20pxだけ重ねる */
+.photo-container:nth-child(4) { left: 300px; } /* 30pxだけ重ねる */
+
+.photo-container:hover {
+    transform: translateY(-20px); /* ホバー時に少し持ち上げる */
+}
+
+
 /* あとで確認 */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .option {
         height: 1050px;
     }
@@ -572,7 +596,13 @@ footer {
     .frame{
         padding: 20px 20px 20px 20px ; 
     }
-}
+    .frame:hover {
+        transform: translateX(-20px);
+        box-shadow: 0 3px 10px 0 #6482AD;
+        opacity: 1.5;
+        cursor: pointer;
+    }
+} */
 
 .cafe {
     margin: 40px;
