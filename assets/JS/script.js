@@ -15,15 +15,17 @@
 $(function() {
   let isTouchDevice = false;
 
-  $(".question").on("touchstart", function(event) {
+  $(".question").on("click", function(event) {
     isTouchDevice = true;
     $(this).next(".answer").slideToggle();
+    console.log("test")
     event.preventDefault(); 
   });
 
-  $(".question").on("click", function(event) {
-    if (!isTouchDevice) {
-      $(this).next(".answer").slideToggle();
-    }
-  });
+  // $(".question").on("click", function(event) {
+  //   if (!isTouchDevice) {
+  //     $(this).next(".answer").slideToggle();
+  //     console.log("sample");
+  //   }
+  // });
 });
