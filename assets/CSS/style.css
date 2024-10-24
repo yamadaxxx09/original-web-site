@@ -558,51 +558,68 @@ footer {
     opacity: 1.5;
     cursor: pointer;
 } */
+
 .block {
-    position: relative; /* 子要素が相対的に配置されるための基準を設定 */
-    width: 240px; /* コンテナの幅を調整 */
-    height: 250px; /* コンテナの高さ */
+    position: relative; 
+    width: 240px; 
+    height: 300px;
 }
 
 .photo-container {
-    position: absolute; /* 各写真を絶対位置で配置 */
-    width: 200px; /* 各写真の幅 */
-    height: 250px; /* 各写真の高さ */
-    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+    padding: 30px 30px 0px 80px;
+    position: absolute; 
+    width: 200px; 
+    height: 250px; 
+    transition: transform 0.3s ease; 
 }
 
-/* 各カードを少しだけずらす */
+.frame {
+    border-radius: 3%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px #6482AD;
+    padding: 2px 2px 2px 2px ; 
+    background: #fff;
+}
+
 .photo-container:nth-child(1) { left: 0; }
-.photo-container:nth-child(2) { left: 100px; } /* 10pxだけ重ねる */
-.photo-container:nth-child(3) { left: 200px; } /* 20pxだけ重ねる */
-.photo-container:nth-child(4) { left: 300px; } /* 30pxだけ重ねる */
+.photo-container:nth-child(2) { left: 150px; } 
+.photo-container:nth-child(3) { left: 250px; } 
+.photo-container:nth-child(4) { left: 350px; } 
 
 .photo-container:hover {
-    transform: translateY(-20px); /* ホバー時に少し持ち上げる */
+    transform: translateX(-100px); 
 }
 
 
 /* あとで確認 */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .option {
-        height: 1050px;
+        height: auto;
     }
     .block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: loop-slide 20s infinite linear 1s both;
     }
     .frame{
-        padding: 20px 20px 20px 20px ; 
+        padding: 2px 2px 2px 2px ; 
     }
-    .frame:hover {
-        transform: translateX(-20px);
-        box-shadow: 0 3px 10px 0 #6482AD;
-        opacity: 1.5;
-        cursor: pointer;
+
+    @keyframes loop-slide {
+        0% {
+            transform: translateX(-2%);
+        }
+        50% {
+            transform: translateX(-130%);
+        }
+    
+        100% {
+            transform: translateX(-2%);
+        }
     }
-} */
+}
 
 .cafe {
     margin: 40px;
