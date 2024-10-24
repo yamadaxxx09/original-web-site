@@ -1,17 +1,3 @@
-
-// $(function() {
-//   $(".question").click(function() {
-//     $(this).next(".answer").slideToggle(); 
-
-//       if(event.type === "touchstart") {
-//         event.preventDefault();
-//       }
-
-//       $(this).next(".answer").slideToggle();
-//   });
-
-// });
-
 $(function() {
   let isTouchDevice = false;
 
@@ -22,10 +8,39 @@ $(function() {
     event.preventDefault(); 
   });
 
-  // $(".question").on("click", function(event) {
-  //   if (!isTouchDevice) {
-  //     $(this).next(".answer").slideToggle();
-  //     console.log("sample");
-  //   }
-  // });
+});
+
+// const images = document.querySelectorAll(".frame");
+
+// function largeImage() {
+//   this.style.transform = "scale(2)";
+// }
+
+// function resetImage() {
+//   this.style.transform = "scale(1)";
+// }
+
+images.forEach (images=> {
+
+  image.addEventListener("touchstart", largeImage);
+  image.addEventListener("touchend", resetImage);
+});
+
+const image = document.querySelectorAll('.image');
+let pressTimer;
+
+image.addEventListener('mousedown', function() {
+    pressTimer = window.setTimeout(function() {
+        image.style.transform = 'scale(2)'; // 2倍に拡大
+    }, 500); // 500ms以上押されたら拡大
+});
+
+image.addEventListener('mouseup', function() {
+    clearTimeout(pressTimer);
+    image.style.transform = 'scale(1)'; // 元のサイズに戻す
+});
+
+image.addEventListener('mouseleave', function() {
+    clearTimeout(pressTimer);
+    image.style.transform = 'scale(1)'; // 元のサイズに戻す
 });
